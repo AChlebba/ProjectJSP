@@ -10,17 +10,23 @@
 <body>
 
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
+<jsp:useBean id="perso" class="com.example.servletjspdemo.domain.Person" scope="session" />
+
 <%
   for (Person person : storage.getAllPersons()) {
 	  out.println("<p>Imie: " + person.getFirstName() + "; Rok urodzenia: " + person.getYob() + "; Przedmiot: " + person.getZakup() + "; Ilosc: " + person.getIlosc() + "; Do zaplaty : " + person.getCena() + "</p>");
   }
 %>
-<p>
-  <a href="getPersonData.jsp">Dodaj nastepnego klienta</a>
-</p>
-<p>
-  <a href="index.jsp">Wroc do menu</a>
-</p>
+<form action="removePerson.jsp">
+
+  Pozycja do usuniecia :	<input type="text"  name="numer" value="${perso.numer}" /><br />
+  <input type="submit" value=" USUN "> 
+
+</form>
+
+<p><a href="getPersonData.jsp">Dodaj nastepnego klienta</a></p>
+<p><a href="setPersonData.jsp">Edytuj klienta</a></p>
+<p><a href="index.jsp">Wroc do menu</a></p>
 
 </body>
 </html>

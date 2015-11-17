@@ -54,6 +54,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <h2>JAVA SERVLET JSP PROJECT</h2>\n");
       out.write("        <p><a href=\"hello\">Nie klikaj</a></p>\n");
       out.write("        <p><a href=\"form\">Formulasz</a></p>\n");
+      out.write("\t<p><a>CRUD</a></p>\n");
+      out.write("\t<p><a href=\"showAllPersons.jsp\">Pokaż wszystkich</a></p>\n");
       out.write("        <p><a href=\"getPersonData.jsp\">Dodaj klienta</a></p>\n");
       out.write("\t<p><a href=\"setPersonData.jsp\">Edytuj klienta</a></p>\n");
       out.write("    </body>\n");

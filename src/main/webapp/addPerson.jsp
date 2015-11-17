@@ -17,11 +17,7 @@
   storage.add(person);
 %>
 
-<p>Został dodany klient: </p>
-<p>First name: ${person.firstName} </p>
-<p>Year of birth: <jsp:getProperty name="person" property="yob"></jsp:getProperty></p>
-<p>
-  <a href="showAllPersons.jsp">Show all persons</a>
-</p>
+<p>Klient dodany: </p>
+<p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
 </body>
 </html>

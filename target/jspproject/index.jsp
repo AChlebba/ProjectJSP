@@ -11,6 +11,8 @@
         <h2>JAVA SERVLET JSP PROJECT</h2>
         <p><a href="hello">Nie klikaj</a></p>
         <p><a href="form">Formulasz</a></p>
+	<p><a>CRUD</a></p>
+	<p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
         <p><a href="getPersonData.jsp">Dodaj klienta</a></p>
 	<p><a href="setPersonData.jsp">Edytuj klienta</a></p>
     </body>

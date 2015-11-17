@@ -17,7 +17,17 @@ public class StorageService {
 	public void set(Person person){
 		Person newPerson = new Person(person.getFirstName(), person.getYob(), person.getZakup(), 							person.getIlosc(), person.getCena() );
 		int i = person.getNumer();
-		db.set(i,newPerson);
+		db.set(i-1,newPerson);
+	}
+
+	public void remove(Person perso){
+		
+		int i = perso.getNumer();
+		db.remove(i-1);
+	}
+
+	public void clear(){
+		db.clear();
 	}
 	
 	public List<Person> getAllPersons(){

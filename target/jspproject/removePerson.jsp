@@ -7,21 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="person" class="com.example.servletjspdemo.domain.Person" scope="session" />
+<jsp:useBean id="perso" class="com.example.servletjspdemo.domain.Person" scope="session" />
 
-<jsp:setProperty name="person" property="*" /> 
+<jsp:setProperty name="perso" property="*" /> 
 
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
 
 <% 
-  storage.set(person);
+  storage.remove(perso);
 %>
 
-<p>Klient zostal zmieniony: </p>
-<p>First name: ${person.firstName} </p>
-<p>Year of birth: <jsp:getProperty name="person" property="yob"></jsp:getProperty></p>
-<p>
-  <a href="showAllPersons.jsp">Show all persons</a>
-</p>
+<p>Klient zostal usuniety: </p>
+<p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
 </body>
 </html>

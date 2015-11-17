@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class setPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class removePerson_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -49,17 +49,17 @@ public final class setPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<title>Insert title here</title>\n");
       out.write("</head>\n");
       out.write("<body>\n");
-      com.example.servletjspdemo.domain.Person person = null;
+      com.example.servletjspdemo.domain.Person perso = null;
       synchronized (session) {
-        person = (com.example.servletjspdemo.domain.Person) _jspx_page_context.getAttribute("person", PageContext.SESSION_SCOPE);
-        if (person == null){
-          person = new com.example.servletjspdemo.domain.Person();
-          _jspx_page_context.setAttribute("person", person, PageContext.SESSION_SCOPE);
+        perso = (com.example.servletjspdemo.domain.Person) _jspx_page_context.getAttribute("perso", PageContext.SESSION_SCOPE);
+        if (perso == null){
+          perso = new com.example.servletjspdemo.domain.Person();
+          _jspx_page_context.setAttribute("perso", perso, PageContext.SESSION_SCOPE);
         }
       }
       out.write('\n');
       out.write('\n');
-      org.apache.jasper.runtime.JspRuntimeLibrary.introspect(_jspx_page_context.findAttribute("person"), request);
+      org.apache.jasper.runtime.JspRuntimeLibrary.introspect(_jspx_page_context.findAttribute("perso"), request);
       out.write(" \n");
       out.write("\n");
       com.example.servletjspdemo.service.StorageService storage = null;
@@ -73,11 +73,11 @@ public final class setPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write('\n');
       out.write('\n');
  
-  storage.set(person);
+  storage.remove(perso);
 
       out.write("\n");
       out.write("\n");
-      out.write("<p>Klient zostal zmieniony: </p>\n");
+      out.write("<p>Klient zostal usuniety: </p>\n");
       out.write("<p><a href=\"showAllPersons.jsp\">Pokaż wszystkich</a></p>\n");
       out.write("</body>\n");
       out.write("</html>\n");

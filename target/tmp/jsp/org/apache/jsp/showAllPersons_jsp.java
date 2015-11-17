@@ -61,18 +61,34 @@ public final class showAllPersons_jsp extends org.apache.jasper.runtime.HttpJspB
         }
       }
       out.write('\n');
+      com.example.servletjspdemo.domain.Person perso = null;
+      synchronized (session) {
+        perso = (com.example.servletjspdemo.domain.Person) _jspx_page_context.getAttribute("perso", PageContext.SESSION_SCOPE);
+        if (perso == null){
+          perso = new com.example.servletjspdemo.domain.Person();
+          _jspx_page_context.setAttribute("perso", perso, PageContext.SESSION_SCOPE);
+        }
+      }
+      out.write('\n');
+      out.write('\n');
 
   for (Person person : storage.getAllPersons()) {
 	  out.println("<p>Imie: " + person.getFirstName() + "; Rok urodzenia: " + person.getYob() + "; Przedmiot: " + person.getZakup() + "; Ilosc: " + person.getIlosc() + "; Do zaplaty : " + person.getCena() + "</p>");
   }
 
       out.write("\n");
-      out.write("<p>\n");
-      out.write("  <a href=\"getPersonData.jsp\">Dodaj nastepnego klienta</a>\n");
-      out.write("</p>\n");
-      out.write("<p>\n");
-      out.write("  <a href=\"index.jsp\">Wroc do menu</a>\n");
-      out.write("</p>\n");
+      out.write("<form action=\"removePerson.jsp\">\n");
+      out.write("\n");
+      out.write("  Pozycja do usuniecia :\t<input type=\"text\"  name=\"numer\" value=\"");
+      out.write("${perso.numer}");
+      out.write("\" /><br />\n");
+      out.write("  <input type=\"submit\" value=\" USUN \"> \n");
+      out.write("\n");
+      out.write("</form>\n");
+      out.write("\n");
+      out.write("<p><a href=\"getPersonData.jsp\">Dodaj nastepnego klienta</a></p>\n");
+      out.write("<p><a href=\"setPersonData.jsp\">Edytuj klienta</a></p>\n");
+      out.write("<p><a href=\"index.jsp\">Wroc do menu</a></p>\n");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");

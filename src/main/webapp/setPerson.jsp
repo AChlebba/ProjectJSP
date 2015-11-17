@@ -18,10 +18,6 @@
 %>
 
 <p>Klient zostal zmieniony: </p>
-<p>First name: ${person.firstName} </p>
-<p>Year of birth: <jsp:getProperty name="person" property="yob"></jsp:getProperty></p>
-<p>
-  <a href="showAllPersons.jsp">Show all persons</a>
-</p>
+<p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
 </body>
 </html>
