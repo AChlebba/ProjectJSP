@@ -17,7 +17,8 @@
   storage.set(person);
 %>
 
-<p>Klient zostal zmieniony: </p>
+<p>Klient zostal zaktualizowany: </p>
 <p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
+<p><a href="index.jsp">Wroc do menu</a></p>
 </body>
 </html>

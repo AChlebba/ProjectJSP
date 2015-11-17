@@ -79,6 +79,7 @@ public final class removePerson_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\n");
       out.write("<p>Klient zostal usuniety: </p>\n");
       out.write("<p><a href=\"showAllPersons.jsp\">Pokaż wszystkich</a></p>\n");
+      out.write("<p><a href=\"index.jsp\">Wroc do menu</a></p>\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

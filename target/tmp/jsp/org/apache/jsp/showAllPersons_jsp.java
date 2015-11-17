@@ -86,7 +86,7 @@ public final class showAllPersons_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("</form>\n");
       out.write("\n");
-      out.write("<p><a href=\"getPersonData.jsp\">Dodaj nastepnego klienta</a></p>\n");
+      out.write("<p><a href=\"getPersonData.jsp\">Dodaj klienta</a></p>\n");
       out.write("<p><a href=\"setPersonData.jsp\">Edytuj klienta</a></p>\n");
       out.write("<p><a href=\"index.jsp\">Wroc do menu</a></p>\n");
       out.write("\n");

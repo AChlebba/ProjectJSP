@@ -79,6 +79,7 @@ public final class addPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<p>Klient dodany: </p>\n");
       out.write("<p><a href=\"showAllPersons.jsp\">Pokaż wszystkich</a></p>\n");
+      out.write("<p><a href=\"index.jsp\">Wroc do menu</a></p>\n");
       out.write("</body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

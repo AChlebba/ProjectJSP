@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:useBean id="person" class="com.example.servletjspdemo.domain.Person" scope="session" />
+<jsp:useBean id="perso" class="com.example.servletjspdemo.domain.Person" scope="session" />
 
 <jsp:setProperty name="perso" property="*" /> 
 

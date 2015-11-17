@@ -19,5 +19,6 @@
 
 <p>Klient dodany: </p>
 <p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
+<p><a href="index.jsp">Wroc do menu</a></p>
 </body>
 </html>

@@ -18,6 +18,6 @@
 %>
 
 <p>Klient dodany: </p>
-<p><a href="showAllPersons.jsp">Show all persons</a></p>
+<p><a href="showAllPersons.jsp">Pokaż wszystkich</a></p>
 </body>
 </html>

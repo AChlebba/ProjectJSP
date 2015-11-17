@@ -24,7 +24,7 @@
 
 </form>
 
-<p><a href="getPersonData.jsp">Dodaj nastepnego klienta</a></p>
+<p><a href="getPersonData.jsp">Dodaj klienta</a></p>
 <p><a href="setPersonData.jsp">Edytuj klienta</a></p>
 <p><a href="index.jsp">Wroc do menu</a></p>
 
