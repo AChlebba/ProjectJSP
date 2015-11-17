@@ -16,7 +16,7 @@ public class StorageService {
 
 	public void set(Person person){
 		Person newPerson = new Person(person.getFirstName(), person.getYob(), person.getZakup(), 							person.getIlosc(), person.getCena() );
-		int i = person.getNumer();
+		int i =1;
 		db.set(i,newPerson);
 	}
 	

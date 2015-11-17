@@ -51,10 +51,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <title>Demo application</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h2>Simple demo application with Java EE 6 Servlet (3.0) and JSP</h2>\n");
-      out.write("        <p><a href=\"hello\">See greetings from servlet</a></p>\n");
-      out.write("        <p><a href=\"form\">Fill a form</a></p>\n");
+      out.write("        <h2>JAVA SERVLET JSP PROJECT</h2>\n");
+      out.write("        <p><a href=\"hello\">Nie klikaj</a></p>\n");
+      out.write("        <p><a href=\"form\">Formulasz</a></p>\n");
       out.write("        <p><a href=\"getPersonData.jsp\">Dodaj klienta</a></p>\n");
+      out.write("\t<p><a href=\"setPersonData.jsp\">Edytuj klienta</a></p>\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

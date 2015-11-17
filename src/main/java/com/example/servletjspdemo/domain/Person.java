@@ -8,6 +8,9 @@ public class Person {
 	private int 	ilosc = 1;
 	private String  cena = "100zł";
 	
+	private int 	numer = 2;
+
+	
 	public Person() {
 		super();
 	}
@@ -53,6 +56,13 @@ public class Person {
 	}
 	public void setCena(String cena) {
 		this.cena = cena;
+	}
+
+	public int getNumer() {
+		return numer;
+	}
+	public void setNumer(int numer) {
+		this.numer = numer;
 	}
 
 }
