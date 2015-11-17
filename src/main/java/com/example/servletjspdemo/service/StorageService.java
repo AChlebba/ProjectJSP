@@ -10,7 +10,7 @@ public class StorageService {
 	private List<Person> db = new ArrayList<Person>();
 	
 	public void add(Person person){
-		Person newPerson = new Person(person.getFirstName(), person.getYob());
+		Person newPerson = new Person(person.getFirstName(), person.getYob(), person.getZakup(), 							person.getIlosc(), person.getCena() );
 		db.add(newPerson);
 	}
 	

@@ -63,16 +63,19 @@ public final class showAllPersons_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write('\n');
 
   for (Person person : storage.getAllPersons()) {
-	  out.println("<p>First name: " + person.getFirstName() + "; Year of birth: " + person.getYob() + "</p>");
+	  out.println("<p>Imie: " + person.getFirstName() + "; Rok urodzenia: " + person.getYob() + "; Przedmiot: " + person.getZakup() + "; Ilosc: " + person.getIlosc() + "; Do zaplaty : " + person.getCena() + "</p>");
   }
 
       out.write("\n");
       out.write("<p>\n");
-      out.write("  <a href=\"getPersonData.jsp\">Add another person</a>\n");
+      out.write("  <a href=\"getPersonData.jsp\">Dodaj nastepnego klienta</a>\n");
+      out.write("</p>\n");
+      out.write("<p>\n");
+      out.write("  <a href=\"index.jsp\">Wroc do menu</a>\n");
       out.write("</p>\n");
       out.write("\n");
       out.write("</body>\n");
-      out.write("</html>");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

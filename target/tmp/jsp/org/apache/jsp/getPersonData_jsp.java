@@ -71,18 +71,27 @@ public final class getPersonData_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\n");
       out.write("<form action=\"addPerson.jsp\">\n");
       out.write("\n");
-      out.write("  First name :<input type=\"text\" name=\"firstName\" value=\"");
+      out.write("  Imie :\t\t<input type=\"text\"  name=\"firstName\" value=\"");
       out.write("${person.firstName}");
       out.write("\" /><br />\n");
-      out.write("  Year of birth :<input type=\"text\"  name=\"yob\" value=\"");
+      out.write("  Rok urodzenia :\t<input type=\"text\"  name=\"yob\" value=\"");
       out.write("${person.yob}");
       out.write("\" /><br />\n");
-      out.write("  <input type=\"submit\" value=\" OK \">\n");
+      out.write("  Zakupiony przedmiot : <input type=\"text\"  name=\"zakup\" value=\"");
+      out.write("${person.zakup}");
+      out.write("\" /><br />\n");
+      out.write("  Ilosc :\t\t<input type=\"text\"  name=\"ilosc\" value=\"");
+      out.write("${person.ilosc}");
+      out.write("\" /><br />\n");
+      out.write("  Do zaplaty :\t\t<input type=\"text\"  name=\"cena\" value=\"");
+      out.write("${person.cena}");
+      out.write("\" /><br />\n");
+      out.write("  <input type=\"submit\" value=\" DODAJ \">\n");
       out.write("  \n");
       out.write("</form>\n");
       out.write("\n");
       out.write("</body>\n");
-      out.write("</html>");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

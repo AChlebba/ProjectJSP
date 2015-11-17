@@ -77,7 +77,7 @@ public final class addPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
 
       out.write("\n");
       out.write("\n");
-      out.write("<p>Following person has been added to storage: </p>\n");
+      out.write("<p>Został dodany klient: </p>\n");
       out.write("<p>First name: ");
       out.write("${person.firstName}");
       out.write(" </p>\n");
@@ -88,7 +88,7 @@ public final class addPerson_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <a href=\"showAllPersons.jsp\">Show all persons</a>\n");
       out.write("</p>\n");
       out.write("</body>\n");
-      out.write("</html>");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
