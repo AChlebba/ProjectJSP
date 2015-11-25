@@ -14,7 +14,7 @@
 <jsp:useBean id="perso" class="com.example.servletjspdemo.domain.Person" scope="session" />
 
 
-<c:forTokens items="Imie:,Rok urodzenia:,Przedmiot:,Ilosc:,Do zaplaty :" delims="," var="name">
+<c:forTokens items="Imie   :,Rok urodzenia   :,Przedmiot   :,Ilosc   :,Do zaplaty   :" delims="," var="name">
    <c:out value="${name}"/>
 </c:forTokens>
 
@@ -29,7 +29,7 @@
 
 <form action="removePerson.jsp">
 
-  Pozycja do usuniecia :	<input type="text"  name="numer" value="${perso.numer}" /><br />
+  Pozycja do usuniecia :	<input type="text"  name="numer" value="" /><br />
   <input type="submit" value=" USUN "> 
 
 </form>

@@ -11,15 +11,14 @@
 <jsp:useBean id="storage" class="com.example.servletjspdemo.service.StorageService" scope="application" />
 <jsp:useBean id="person" class="com.example.servletjspdemo.domain.Person" scope="session" />
 
-<form action="setPerson.jsp">
+<form action="addPerson.jsp">
 
   Imie :		<input type="text"  name="firstName" value="" /><br />
   Rok urodzenia :	<input type="text"  name="yob" value="" /><br />
   Zakupiony przedmiot : <input type="text"  name="zakup" value="" /><br />
   Ilosc :		<input type="text"  name="ilosc" value="" /><br />
-  Do zaplaty :		<input type="text"  name="cena" value="" /><br />
-  Pozycja do zmiany :	<input type="text"  name="numer" value="" /><br />
-  <input type="submit" value=" ZMIEN ">
+  Do zaplaty :		<input type="text"  name="cena" value="$" /><br />
+  <input type="submit" value=" DODAJ ">
   
 </form>
 

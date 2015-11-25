@@ -13,11 +13,11 @@
 
 <form action="addPerson.jsp">
 
-  Imie :		<input type="text"  name="firstName" value="${person.firstName}" /><br />
-  Rok urodzenia :	<input type="text"  name="yob" value="${person.yob}" /><br />
-  Zakupiony przedmiot : <input type="text"  name="zakup" value="${person.zakup}" /><br />
-  Ilosc :		<input type="text"  name="ilosc" value="${person.ilosc}" /><br />
-  Do zaplaty :		<input type="text"  name="cena" value="${person.cena}" /><br />
+  Imie :		<input type="text"  name="firstName" value="" /><br />
+  Rok urodzenia :	<input type="text"  name="yob" value="" /><br />
+  Zakupiony przedmiot : <input type="text"  name="zakup" value="" /><br />
+  Ilosc :		<input type="text"  name="ilosc" value="" /><br />
+  Do zaplaty :		<input type="text"  name="cena" value="" /><br />
   <input type="submit" value=" DODAJ ">
   
 </form>

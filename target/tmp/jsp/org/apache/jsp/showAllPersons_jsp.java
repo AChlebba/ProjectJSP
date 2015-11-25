@@ -102,9 +102,7 @@ public final class showAllPersons_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("<form action=\"removePerson.jsp\">\n");
       out.write("\n");
-      out.write("  Pozycja do usuniecia :\t<input type=\"text\"  name=\"numer\" value=\"");
-      out.write("${perso.numer}");
-      out.write("\" /><br />\n");
+      out.write("  Pozycja do usuniecia :\t<input type=\"text\"  name=\"numer\" value=\"\" /><br />\n");
       out.write("  <input type=\"submit\" value=\" USUN \"> \n");
       out.write("\n");
       out.write("</form>\n");
@@ -136,7 +134,7 @@ public final class showAllPersons_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.taglibs.standard.tag.el.core.ForTokensTag _jspx_th_c_forTokens_0 = (org.apache.taglibs.standard.tag.el.core.ForTokensTag) _jspx_tagPool_c_forTokens_var_items_delims.get(org.apache.taglibs.standard.tag.el.core.ForTokensTag.class);
     _jspx_th_c_forTokens_0.setPageContext(_jspx_page_context);
     _jspx_th_c_forTokens_0.setParent(null);
-    _jspx_th_c_forTokens_0.setItems("Imie:,Rok urodzenia:,Przedmiot:,Ilosc:,Do zaplaty :");
+    _jspx_th_c_forTokens_0.setItems("Lista   ,klientow    ,i   ,zakupow   ");
     _jspx_th_c_forTokens_0.setDelims(",");
     _jspx_th_c_forTokens_0.setVar("name");
     int[] _jspx_push_body_count_c_forTokens_0 = new int[] { 0 };
